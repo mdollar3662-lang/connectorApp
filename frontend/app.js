@@ -1,4 +1,4 @@
-const API = 'http://localhost:3000';
+const API_URL = "https://connectorapp.onrender.com"
 function loadNearby(){
   fetch(`${API}/api/nearby`)
   .then(r=>r.json())
