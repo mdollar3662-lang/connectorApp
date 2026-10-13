@@ -17,9 +17,11 @@ app.get('/', (req,res)=>{
 });
 
 app.get('/api/nearby', (req,res)=>{
-  res.json(users);
+ res.json([
+    { id: 1, name: "Test User 1" },
+    { id: 2, name: "Test User 2" }
+  ]);
 });
-
 app.post('/api/register', (req,res)=>{
   const {name, job, skills, need} = req.body;
   users.push({name, job, distance: "10m", value: 95, need, skills});
