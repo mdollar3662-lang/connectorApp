@@ -1,0 +1,6 @@
+{
+  "appId": "com.mdollar.connector",
+  "appName": "ConnectorApp",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Connector App - Nearby People</h1>
+<div id="list"></div>
+<script>
+fetch('http://localhost:3000/api/nearby')
+.then(r=>r.json())
+.then(data=>{
+  document.getElementById('list').innerHTML = data.map(u=> 
+    `<div><b>${u.name}</b> - ${u.job} - ${u.distance} - Value: ${u.value}</div>`
+  ).join('');
+});
+</script>
+</body>
+</html>
